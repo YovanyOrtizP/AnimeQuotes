@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.animeapp.ui.random.RandomFragment"
+        android:label="@string/Random"
+        tools:layout="@layout/fragment_random"/>
+
+    <fragment
+        android:id="@+id/nav_anime"
+        android:name="com.example.animeapp.ui.title.TitleFragment"
+        android:label="@string/Anime"
+        tools:layout="@layout/fragment_title"/>
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.animeapp.ui.list.ListFragment"
+        android:label="@string/List"
+        tools:layout="@layout/fragment_list"/>
+
+</navigation>
